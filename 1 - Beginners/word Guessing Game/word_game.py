@@ -5,6 +5,8 @@ pokemons = ['pikachu', 'buterfree', 'psyduck', 'togepi', 'blastoise', 'venussaur
 pokemon = random.choice(pokemons)
 guesses = []
 turns = 12
+
+#Create the blank size of the name of the pokemon
 for p in pokemon:
     guesses.append('_')
 
@@ -15,6 +17,8 @@ while turns > 0:
     print('Tentatives ', turns)
     print('Please enter a letter:')
     letter = str(input())
+    
+    # validate the name by searching the letter in the vettor
     for x in pokemon:
         if x == letter:
             i = pokemon.index(x)

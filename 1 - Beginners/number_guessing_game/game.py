@@ -22,5 +22,5 @@ while chances != 0:
             user_choice = int(input())
             chances -= 1
         else:
-            print('Congrats you guessed rigth! The computer number is: ', computer_choice, '\n')
+            print('Congrats you guessed right! The computer number is: ', computer_choice, '\n')
             break
